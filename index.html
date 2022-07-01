@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mbank Login</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      class="container-fluid text-center pt-2 pb-1 border-bottom fs-3 bg-warning"
+    >
+      MBANK
+    </div>
+    <div class="login text-center border">
+      <h1 class="">Login to Internet Banking</h1>
+
+      <li><input type="text" placeholder="User ID" /></li>
+      <li><input type="text" placeholder="Password" /></li>
+      <li><button class="btn btn-success" onclick="">Login</button></li>
+      <li>
+        <button class="btn btn-primary mt-3" onclick="openModal()">
+          New user? Register here.
+        </button>
+      </li>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal1 hidden">
+      <button class="close-modal" onclick="closeModal()">&times;</button>
+      <h1 class="text-center">Register</h1>
+      <h3>Add Account Details</h3>
+      <form action="" class="m-1" style="display: flex; flex-direction: column">
+        <input
+          class="form-control"
+          id="uid"
+          type="text"
+          placeholder="User ID"
+        />
+        <input
+          class="form-control"
+          id="uname"
+          type="text"
+          placeholder="Username"
+        />
+        <input
+          class="form-control"
+          id="acno"
+          type="text"
+          placeholder="Account Number"
+        />
+        <input
+          class="form-control"
+          id="pword"
+          type="text"
+          placeholder="Password"
+        />
+
+        <button
+          type="button"
+          class="btn btn-success mt-2"
+          onclick="addUSR()"
+          id="btn1"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+  <script src="./script.js"></script>
+</html>
