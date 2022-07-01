@@ -18,7 +18,12 @@ input {
   padding: 6px;
 }
 
+body {
+  background: url("./Rect Light.svg");
+}
+
 .navcontainer {
+  padding-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,6 +36,7 @@ input {
   background-color: #344955;
   border-radius: 3em;
   padding-inline: 2em;
+  padding-top: 1em;
 }
 
 .navcontainer .navbar ul {
@@ -42,11 +48,13 @@ input {
 
 .navcontainer .navbar ul a {
   color: white;
+  text-decoration: none;
   display: block;
   padding: 0 1em;
 }
 
 .login {
+  background-color: #f6f6f6;
   margin-top: 2em;
   margin-inline: 1em;
   padding: 2em;
@@ -64,6 +72,11 @@ input {
 
 .login button {
   width: 82%;
+}
+
+#logo {
+  text-align: center;
+  padding-left: 2em;
 }
 
 .close-modal {
@@ -113,7 +126,89 @@ input {
   z-index: 10;
 }
 
+.tagline {
+  display: none;
+}
+
 .hidden {
   display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .login {
+    margin-inline: 10em;
+    margin-top: 10em;
+  }
+  .modal1 {
+    margin-top: 5em;
+    width: 80%;
+  }
+  .modal1 h1 {
+    padding-bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #logo {
+    text-align: left;
+  }
+  .login {
+    margin-inline: 12em;
+    margin-top: 10em;
+  }
+  .modal1 {
+    margin-top: 5em;
+    width: 80%;
+  }
+  .modal1 h1 {
+    padding-bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #logo {
+    padding-left: 2.8em;
+  }
+  .login {
+    margin-left: 35em;
+    margin-right: 5em;
+    margin-top: 10em;
+    float: right;
+  }
+  .modal1 {
+    margin-top: 7em;
+    width: 88%;
+  }
+  .modal1 h1 {
+    padding-bottom: 1em;
+  }
+  .tagline {
+    margin-top: 28.5em;
+    margin-left: 5em;
+    position: absolute;
+    display: block;
+  }
+  .tagline h1 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  #logo {
+    padding-left: 5em;
+  }
+  .tagline {
+    padding-left: 3.8em;
+  }
+  .login {
+    margin-right: 9em;
+  }
+  .modal1 {
+    margin-top: 7em;
+    width: 60%;
+  }
+  .modal1 h1 {
+    padding-bottom: 1em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
