@@ -43,44 +43,66 @@
 
     <!-- CARD 1 -->
     <div class="sect1">
-      <div class="cont border border-dark">
-        <div class="head bg-secondary"><p>Balance</p></div>
-        <div class="body"><p id="balAMT">AMOUNT</p></div>
-      </div>
+      <div class="head"><p>Balance</p></div>
+      <div class="body"><p id="balAMT">AMOUNT</p></div>
     </div>
     <!-- CARD 2 -->
     <div class="sect2">
       <div class="cont item1">
-        <button class="btn btn-outline-success fs-3" style="width: 100%">
+        <button
+          class="btn btn-warning fs-3"
+          onclick="paymentsO()"
+          style="width: 100%"
+        >
           Payments
         </button>
       </div>
       <div class="cont item2">
-        <button class="btn btn-outline-success fs-3" style="width: 100%">
+        <button class="btn btn-warning fs-3" style="width: 100%">
           Deposit
         </button>
       </div>
       <div class="cont item3">
-        <button class="btn btn-outline-success fs-3" style="width: 100%">
+        <button class="btn btn-warning fs-3" style="width: 100%">
           Accounts
         </button>
       </div>
       <div class="cont item4">
-        <button class="btn btn-outline-success fs-3" style="width: 100%">
+        <button class="btn btn-warning fs-3" style="width: 100%">
           Insurance
         </button>
       </div>
       <div class="cont item5">
-        <button class="btn btn-outline-success fs-3" style="width: 100%">
+        <button class="btn btn-warning fs-3" style="width: 100%">
           Shopping
         </button>
       </div>
       <div class="cont item6">
-        <button class="btn btn-outline-success fs-3" style="width: 100%">
-          Offers
-        </button>
+        <button class="btn btn-warning fs-3" style="width: 100%">Offers</button>
       </div>
     </div>
+    <!--  -->
+    <!-- MODALS -->
+    <!-- Payments -->
+    <div class="modal1 payments hidden">
+      <button class="close-modal" onclick="closeModal()">&times;</button>
+      <h1 class="mb-4">Payments</h1>
+      <div>
+        <form action="">
+          <div class="label">
+            <kbd class="rounded-2 p-2 bg-info ps-3 pe-5" for="">To </kbd>
+          </div>
+          <li><input class="mt-3" type="text" placeholder="A/C Number" /></li>
+          <div class="label">
+            <kbd class="rounded-2 p-2 ps-3 pe-3 bg-info" for="">Amount</kbd>
+          </div>
+          <li><input class="mt-3" type="Number" placeholder="Amount" /></li>
+        </form>
+      </div>
+    </div>
+    <!--  -->
+    <div class="overlay hidden"></div>
+
     <!--  -->
   </body>
   <script src="./script.js"></script>

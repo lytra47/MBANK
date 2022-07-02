@@ -19,7 +19,7 @@ input {
 }
 
 body {
-  background: url("./Rect Light.svg");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='900' preserveAspectRatio='none' viewBox='0 0 1440 900'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1006%26quot%3b)' fill='none'%3e%3crect width='1440' height='900' x='0' y='0' fill='rgba(48%2c 48%2c 52%2c 1)'%3e%3c/rect%3e%3cpath d='M66 900L966 0L1675.5 0L775.5 900z' fill='url(%23SvgjsLinearGradient1007)'%3e%3c/path%3e%3cpath d='M509.20000000000005 900L1409.2 0L1622.2 0L722.2 900z' fill='url(%23SvgjsLinearGradient1007)'%3e%3c/path%3e%3cpath d='M1425 900L525 0L52.5 0L952.5 900z' fill='url(%23SvgjsLinearGradient1008)'%3e%3c/path%3e%3cpath d='M895.8 900L-4.2000000000000455 0L-469.20000000000005 0L430.79999999999995 900z' fill='url(%23SvgjsLinearGradient1008)'%3e%3c/path%3e%3cpath d='M926.5872142658901 900L1440 386.5872142658901L1440 900z' fill='url(%23SvgjsLinearGradient1007)'%3e%3c/path%3e%3cpath d='M0 900L513.4127857341099 900L 0 386.5872142658901z' fill='url(%23SvgjsLinearGradient1008)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1006'%3e%3crect width='1440' height='900' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1007'%3e%3cstop stop-color='rgba(157%2c 155%2c 6%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(157%2c 155%2c 6%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1008'%3e%3cstop stop-color='rgba(157%2c 155%2c 6%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(157%2c 155%2c 6%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
 }
 
 .navcontainer {
@@ -79,6 +79,10 @@ body {
   padding-left: 2em;
 }
 
+.payments input {
+  width: 80%;
+}
+
 .close-modal {
   position: absolute;
   margin-top: -70px;
@@ -135,6 +139,7 @@ body {
 }
 
 .usercontainer {
+  color: white;
   margin-left: 1.6em;
   margin-top: 2.6em;
   float: left;
@@ -175,22 +180,23 @@ body {
       grid-row-start: 1;
 }
 
-.cont {
-  border-radius: 8px;
-}
-
 .head {
+  background-color: #d6d600;
   border-radius: 8px 8px 0 0;
   text-align: right;
 }
 
 .head p {
+  margin-bottom: 0em !important;
   font-size: 20px;
   padding: 0.4em 0.8em 0.4em 0.4em;
 }
 
 .body {
   text-align: center;
+  background-color: #8d8d8d;
+  color: white;
+  border-radius: 0 0px 8px 8px;
 }
 
 .body p {
@@ -202,6 +208,17 @@ body {
 @media only screen and (min-width: 800px) {
   #welc {
     margin-left: 2em;
+  }
+  kbd {
+    text-align: center;
+    font-size: 20px !important;
+  }
+  .payments {
+    text-align: center;
+  }
+  .payments input {
+    margin-left: 0em;
+    width: 60%;
   }
   .login {
     margin-inline: 10em;
@@ -229,6 +246,9 @@ body {
   #logo {
     text-align: left;
   }
+  #balAMT {
+    padding-block: 6px;
+  }
   .login {
     margin-inline: 12em;
     margin-top: 10em;
@@ -239,6 +259,28 @@ body {
   }
   .modal1 h1 {
     padding-bottom: 1em;
+  }
+  .payments {
+    width: 60% !important;
+  }
+  #welc {
+    margin-left: 2.5em;
+  }
+  .sect1 {
+    width: 20%;
+    margin-top: 12em;
+    margin-left: 76.2%;
+    margin-right: 2.5em;
+  }
+  .propic {
+    margin-right: 2.5em;
+  }
+  .sect2 {
+    margin-inline: 2.5em;
+    gap: 25px;
+  }
+  button {
+    height: 3.5em;
   }
 }
 
@@ -268,11 +310,33 @@ body {
   .tagline h1 {
     font-size: 3em;
   }
+  #welc {
+    margin-left: 4em;
+  }
+  .sect1 {
+    width: 20%;
+    margin-top: 12em;
+    margin-left: 74.8%;
+    margin-right: 4em;
+  }
+  .propic {
+    margin-right: 4em;
+  }
+  .sect2 {
+    margin-inline: 4em;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
   #logo {
     padding-left: 5em;
+  }
+  .sect1 {
+    width: 20%;
+    margin-top: 10em;
+    margin-bottom: 8em;
+    margin-left: 75.8%;
+    margin-right: 4em;
   }
   .tagline {
     padding-left: 3.8em;
