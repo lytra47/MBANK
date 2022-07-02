@@ -21,7 +21,7 @@ body {
   padding-top: 5px;
   display: flex;
   justify-content: center;
-  .navbar {
+  .navbar1 {
     background-color: #344955;
     border-radius: 3em;
     padding-inline: 2em;
@@ -110,7 +110,66 @@ body {
   display: none;
 }
 
+.usercontainer {
+  margin-left: 1.6em;
+  margin-top: 2.6em;
+  float: left;
+}
+
+.propic {
+  width: 6em;
+  margin-top: 2em;
+  float: right;
+  margin-right: 1em;
+}
+
+.sect1 {
+  margin-top: 16em;
+  margin-inline: 1em;
+}
+
+.sect2 {
+  display: grid;
+  gap: 10px;
+  margin-top: 2em;
+  margin-inline: 1em;
+}
+.item1 {
+  grid-row-start: 1;
+}
+.item2 {
+  grid-row-start: 1;
+}
+.item3 {
+  grid-row-start: 1;
+}
+
+.cont {
+  border-radius: 8px;
+}
+.head {
+  border-radius: 8px 8px 0 0;
+  text-align: right;
+  p {
+    font-size: 20px;
+    padding: 0.4em 0.8em 0.4em 0.4em;
+  }
+}
+.body {
+  text-align: center;
+  p {
+    padding: 0.4em;
+    padding-block: 2em;
+    font-size: 22px;
+  }
+}
+
+/////////////
+
 @media only screen and (min-width: 800px) {
+  #welc {
+    margin-left: 2em;
+  }
   .login {
     margin-inline: 10em;
     margin-top: 10em;
@@ -121,6 +180,15 @@ body {
     h1 {
       padding-bottom: 1em;
     }
+  }
+  .sect1 {
+    margin-inline: 2em;
+  }
+  .propic {
+    margin-right: 2em;
+  }
+  .sect2 {
+    margin-inline: 2em;
   }
 }
 @media only screen and (min-width: 1000px) {
