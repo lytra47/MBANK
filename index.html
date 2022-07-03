@@ -21,16 +21,20 @@
     >
       MBANK
     </div>
-    <div class="tagline">
+    <div class="tagline text-white">
       <h1>MBANK</h1>
       <h3>Secure and smart banking.</h3>
     </div>
     <div class="login text-center border">
       <h1 class="">Login to Internet Banking</h1>
 
-      <li><input type="text" placeholder="User ID" /></li>
-      <li><input type="text" placeholder="Password" /></li>
-      <li><button class="btn btn-success" onclick="">Login</button></li>
+      <li><input type="text" placeholder="User ID" id="usrID" /></li>
+      <li><input type="text" placeholder="Password" id="usrPSWD" /></li>
+      <li>
+        <button class="btn btn-success" id="login" onclick="login()">
+          Login
+        </button>
+      </li>
       <li>
         <button class="btn btn-primary mt-3" onclick="openModal()">
           New user? Register here.
@@ -65,7 +69,7 @@
         <input
           class="form-control"
           id="pword"
-          type="text"
+          type="password"
           placeholder="Password"
         />
 

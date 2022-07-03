@@ -23,7 +23,7 @@ body {
 }
 
 .navcontainer {
-  padding-top: 5px;
+  padding-top: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,24 +33,34 @@ body {
 }
 
 .navcontainer .navbar1 {
-  background-color: #344955;
   border-radius: 3em;
-  padding-inline: 2em;
-  padding-top: 1em;
+  padding-inline: 0em;
+  padding-top: 0.6em;
+}
+
+.navcontainer .navbar1 button {
+  background-color: #fec107;
+  border: 1px solid black;
+  color: black;
+}
+
+.navcontainer .navbar1 button:hover {
+  background-color: #ffd75f;
+}
+
+.navcontainer .navbar1 #navH {
+  border-radius: 8px 0px 0px 8px;
+}
+
+.navcontainer .navbar1 #navL {
+  border-radius: 0px 8px 8px 0px;
 }
 
 .navcontainer .navbar1 ul {
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.navcontainer .navbar1 ul a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 0 1em;
+  padding-right: 2.2em;
 }
 
 .login {
@@ -213,6 +223,9 @@ body {
     text-align: center;
     font-size: 20px !important;
   }
+  .navbar1 button {
+    padding: 0.6em 1em;
+  }
   .payments {
     text-align: center;
   }
@@ -287,6 +300,18 @@ body {
 @media only screen and (min-width: 1200px) {
   #logo {
     padding-left: 2.8em;
+  }
+  .navbar1 {
+    background-color: #fec107;
+    border-radius: 0 !important;
+    width: 100%;
+  }
+  .navbar1 button {
+    border-radius: 8px !important;
+    border: 0 !important;
+  }
+  .navbar1 ul {
+    margin-left: 70%;
   }
   .login {
     margin-left: 35em;
