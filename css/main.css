@@ -11,7 +11,7 @@ img {
 }
 
 input {
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid grey;
   height: 40px;
   font-size: 14pt;
@@ -318,6 +318,16 @@ body {
     margin-right: 5em;
     margin-top: 10em;
     float: right;
+    padding-inline: 4em;
+  }
+  .login h1 {
+    font-size: 30px;
+  }
+  .login input {
+    width: 100%;
+  }
+  .login button {
+    width: 100%;
   }
   .modal1 {
     margin-top: 7em;
